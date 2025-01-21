@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- our local style -->
     <link rel="stylesheet" href="public/style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <title>images preview</title>
 </head>
 <body>
-    <h1>my app</h1>
-
+    <header>
+        <h1>my app</h1>
+    </header>
+    <div class="container">
+        <h1>Image Preview App</h1>
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="fileInput" accept="image/*">
+            <p>Drag & Drop your image here or Click to Upload</p>
+        </div>
+        <div class="preview" id="preview">
+            <button class="remove-btn" id="removeBtn">&times;</button>
+            <img src="#" alt="Image Preview" id="previewImage">
+        </div>
+    </div>
+    <!-- our local script -->
     <script src="app.js"></script>
 </body>
 </html>
